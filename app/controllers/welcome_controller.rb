@@ -1,7 +1,11 @@
 class WelcomeController < ApplicationController
-  def index
+  def contact
   end
 
+  def index
+  end
+  
   def about
   end
+
 end

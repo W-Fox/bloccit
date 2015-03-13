@@ -6,8 +6,8 @@ Rails.application.routes.draw do
 
   resources :advertisements
   
-  get 'about' => 'welcome#about'
+  get 'advertisements/index' => 'advertisements#index'
 
 
-root to: 'welcome#index'
+root to: 'advertisements#index'
 end

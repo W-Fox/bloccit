@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   resources :topics do
     resources :posts, except: [:index]
   end
+  resources :summarys do
+    resources :posts
+  end
   
   get 'about' => 'welcome#about'
 

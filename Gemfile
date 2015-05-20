@@ -13,6 +13,8 @@ gem 'rails', '4.2.0'
    gem "rails-erd"
    gem 'pry-rails'
  end
+# Redcarpet, adding markdown to posts
+gem 'redcarpet' 
 # twitter bootstrap gem
 gem 'bootstrap-sass'
 # Use SCSS for stylesheets

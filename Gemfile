@@ -14,7 +14,13 @@ gem 'rails', '4.2.0'
    gem 'pry-rails'
  end
 # Redcarpet, adding markdown to posts
-gem 'redcarpet' 
+gem 'redcarpet'
+# Fog, Supports S3 storage from amazon, cloud library
+gem 'fog'
+# Carrierwave; image uploading software
+gem 'carrierwave'
+# Mini_magic, for manipulating images
+gem 'mini_magick'
 # twitter bootstrap gem
 gem 'bootstrap-sass'
 # Use SCSS for stylesheets

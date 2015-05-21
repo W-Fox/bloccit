@@ -13,6 +13,8 @@ gem 'rails', '4.2.0'
    gem "rails-erd"
    gem 'pry-rails'
  end
+#gem to paginate pages
+gem 'will_paginate', '~> 3.0.5'
 # Redcarpet, adding markdown to posts
 gem 'redcarpet'
 # Fog, Supports S3 storage from amazon, cloud library

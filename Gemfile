@@ -15,6 +15,11 @@ gem 'rails', '4.2.0'
    gem 'binding_of_caller'
    gem 'better_errors'
  end
+
+ group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+ end
+ 
 #gem to paginate pages
 gem 'will_paginate', '~> 3.0.5'
 # Redcarpet, adding markdown to posts

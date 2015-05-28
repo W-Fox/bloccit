@@ -12,6 +12,8 @@ gem 'rails', '4.2.0'
    gem 'sqlite3'
    gem "rails-erd"
    gem 'pry-rails'
+   gem 'binding_of_caller'
+   gem 'better_errors'
  end
 #gem to paginate pages
 gem 'will_paginate', '~> 3.0.5'

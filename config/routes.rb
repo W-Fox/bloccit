@@ -1,7 +1,6 @@
 Bloccit::Application.routes.draw do
 
   devise_for :users
-<<<<<<< HEAD
     resources :users, only: [:update]
  
   resources :topics do
@@ -10,30 +9,13 @@ Bloccit::Application.routes.draw do
 
   resources :posts, only: [] do
    resources :comments, only: [:create, :destroy]
+   post '/up-vote' => 'votes#up_vote' , as: :up_vote
+   post '/down-vote' => 'votes#down_vote', as: :down_vote
   end
- 
-  resources :summary, only: [:new, :create, :show]
  
 get 'about' => 'welcome#about'
  
 root to: 'welcome#index'
 
-=======
-  resources :users, only: [:update]
-
-  resources :topics do
-    resources :posts, except: [:index]
-  end
- 
-  resources :posts, only: [] do
-    resources :comments, only: [:create, :destroy]
-  end
-
-  resources :summary, only: [:new, :create, :show]
-
-  get 'about' => 'welcome#about'
-
-  root to: 'welcome#index'
->>>>>>> destroy-assignment
 end
 
